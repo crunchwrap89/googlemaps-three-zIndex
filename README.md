@@ -1,8 +1,8 @@
-# frustum-culling
+# googlemaps-three-zIndex
 
-This application adds 2000 boxes to the scene on random lat/Lngs.
-Check console.log(this.renderer.info.render.calls) to see that half of them are always rendered,
-atleast half of the boxes will be rendered even when zoomed in on max zoom level and 0 boxes are within viewport.
+
+This application adds a 3d box to the scene and it also sets bordercolors and fillColor to the map via geojson data.
+The purpose of this app is to showcase that the threejsoverlayview will always have a zIndex lower than other overlays, so objects placed on the map will be below other shapes placed on the map.
 
 
 ## Project Setup
@@ -15,10 +15,4 @@ npm install
 
 ```sh
 npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
 ```
